@@ -8,18 +8,27 @@
 </head>
 
 <body>
-  <h1>Text Analyzer</h1>
+  <header><h1>Text Analyzer</h1></header>
 
    <textarea name="user-input"placeholder='Ingresa tu texto aquí'></textarea>
    <button id="reset-button">Limpiar Casilla</button>
 
    <ul>   
-    <li class="wordCount">Palabras  <span>0</span></li>
-    <li class="charCount">Caracteres  <span>0</span></li>
-    <li>Números  <span>0</span></li>
-    <li>Caracteres sin espacios  <span>0</span></li>
-    <li>Suma total de números  <span>0</span></li>
-    <li>Longitud media de las palabras  <span>0</span></li>
+    <li class="titulo">Palabras:</li>
+    <li data-testid="word-count" class="conteo">0</li>
+    <li class="titulo">Caracteres:</li>
+    <li data-testid="character-count" class="conteo">0</li>
+    <li class="titulo">Caracteres sin espacios:</li>
+    <li data-testid="character-no-spaces-count" class="conteo">0</li>
+   </ul>
+
+   <ul>       
+    <li class="titulo">Números:</li>
+    <li data-testid="number-count" class="conteo">0</li>
+    <li class="titulo">Suma total de números:</li>
+    <li data-testid="number-sum" class="conteo">0</li>
+    <li class="titulo">Longitud media de las palabras:</li>
+    <li data-testid="word-length-average" class="conteo">0</li>
    </ul>
 
    <footer>
