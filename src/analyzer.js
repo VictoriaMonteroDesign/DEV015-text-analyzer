@@ -1,9 +1,10 @@
-const analyzer = {  
-  getWordCount: (text) => {   
+const analyzer = {
+  getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.   
     const word = text.split(" ");
-    const wordlength = word.length;
-    return wordlength; 
+    //const word = text.trim();
+    const filteredWords = word.filter(word => word.length > 0);
+    return filteredWords.length;
   },
 
   getCharacterCount: (text) => {
@@ -19,52 +20,37 @@ const analyzer = {
     return chartextnospaces;
   },
 
-  getAverageWordLength: (text) => {    
+  getAverageWordLength: (text) => {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     const words = text.split(" ");
     let totalLength = 0;
-
     for (const word of words) {
-    totalLength += word.length;
-}
-
-const wordlengthaverage = (totalLength / words.length);
-return wordlengthaverage.toFixed(1)
-
+      totalLength += word.length;
+    }
+    const wordlengthaverage = totalLength / words.length;
+    return parseFloat(wordlengthaverage.toFixed(2));
   },
 
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    let numberCount = 0;
-    for (let i = 0; i < text.length; i++) {
-      const char = text[i];
-      if (char >= '0' && char <= '9') {
-        numberCount++;
-      }
+    const numberPattern = /\b\d+(\.\d+)?\b/g;
+    const matches = text.match(numberPattern);
+    if (!matches) {
+      return 0;
     }
-    return numberCount;
+    return matches.length;
   },
-  
+
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    let numberSum = 0;
-    let currentNumber = '';
-  
-    for (const char of text) {
-      if (char >= '0' && char <= '9') {
-        currentNumber += char;
-      } else {
-        if (currentNumber !== '') {
-          numberSum += Number(currentNumber);
-          currentNumber = '';
-        }
-      }
+    const numberPattern = /\b\d+(\.\d+)?\b/g;
+    const matches = text.match(numberPattern);
+    if (!matches) {
+      return 0;
     }
-  
-    if (currentNumber !== '') {
-      numberSum += Number(currentNumber);
-    }
-    return numberSum;    
+    const numberSum = matches.reduce((sum, num) => sum + parseFloat(num), 0);
+    
+    return numberSum;
   },
 };
 
