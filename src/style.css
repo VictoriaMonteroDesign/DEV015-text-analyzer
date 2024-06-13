@@ -4,7 +4,7 @@ header {
 }
 
 body {
-    background-image: url("https://image.slidesdocs.com/responsive-images/background/texture-of-black-and-gray-watercolor-brushstrokes-powerpoint-background_b13beeb7fe__960_540.jpg"); 
+    background-image: url("https://i.imgur.com/ghOGJgV.jpg");     
     background-size: cover;
     background-position: center;
 }
@@ -32,6 +32,7 @@ textarea[name="user-input"] {
     display: block;
     border-width: 2px;
     border-radius: 30px;
+    opacity: 0.9;
 }
 
 #reset-button {
