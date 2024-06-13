@@ -23,20 +23,20 @@ ingresar un input, tambien debe tener un boton para limpiar la caja y debe
 calcular las siguientes métricas y actualizar el resultado en tiempo real 
 a medida que la usuaria escribe su texto:
 
-    - **Recuento de palabras**: la aplicación debe poder contar el número de
+  - **Recuento de palabras**: la aplicación debe poder contar el número de
     palabras en el texto de entrada y mostrar este recuento a la usuaria
-    - **Recuento de caracteres**: la aplicación debe poder contar el número de
+  - **Recuento de caracteres**: la aplicación debe poder contar el número de
     caracteres en el texto de entrada, incluidos espacios y signos de
     puntuación, y mostrar este recuento a la usuaria.
-    - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
+  - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
     la aplicación debe poder contar el número de caracteres en el texto de
     entrada, excluyendo espacios y signos de puntuación, y mostrar este recuento
     a la usuaria.
-    - **Recuento de números**: la aplicación debe contar cúantos números hay en
+  - **Recuento de números**: la aplicación debe contar cúantos números hay en
     el texto de entrada y mostrar este recuento a la usuaria.
-    - **Suma total de números**: la aplicación debe sumar todos los números que
+  - **Suma total de números**: la aplicación debe sumar todos los números que
     hay en el texto de entrada y mostrar el resultado a la usuaria.
-    - **Longitud media de las palabras**: la aplicación debe calcular la
+  - **Longitud media de las palabras**: la aplicación debe calcular la
     longitud media de las palabras en el texto de entrada y mostrársela a la usuaria.
 
 ## 3. Prototipado
