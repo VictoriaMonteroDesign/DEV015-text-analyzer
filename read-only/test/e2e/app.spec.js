@@ -114,7 +114,7 @@ test.describe('Botón:', () => {
 });
 
 //TODO: Reemplazar skip por describe para ejecutar el test de funcionalidades opcionales
-test.skip('Opcional:', () => {
+test('Opcional:', () => {
   const TEST_TEXT_SPACES = '       ';
   const TEST_TEXT_PUNCTUATION_MARKS = '.,;:"«»[]{}()¿?¡!-';
   

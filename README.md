@@ -2,11 +2,11 @@
 
 ## Índice
 
-* [1. Consideraciones generales](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Resumen del proyecto](#3-resumen-del-proyecto)
-* [4. Funcionalidades](#4-funcionalidades)
-* [5. Boilerplate](#5-boilerplate)
+* [1. Descripción del proyecto](#1-descripcion-del-proyecto)
+* [2. Funcionalidades Requeridas](#2-funcionalidades-requeridas)
+* [3. Prototipado](#3-prototipado)
+* [4. Desarrollo](#4-Desarrollo)
+* [5. Testing](#5-testing)
 * [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
 * [7. Pruebas](#7-pruebas)
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
@@ -25,24 +25,9 @@
   No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
   Irás aprendiendo.
 
-## 2. Preámbulo
+## 2. Prototipado
 
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
-
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
-Un analizador de texto es una aplicación para extraer información útil de un
-texto utilizando diversas técnicas, como el procesamiento del lenguaje
-natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
-Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
-información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
+![Wireframe Desktop en Figma]('/../Imagenes/Prototipo%20Figma.PNG')
 
 En general, las aplicaciones de análisis de texto brindan información
 valiosa y métricas sobre los textos que pueden ayudar a las usuarias a
@@ -93,31 +78,6 @@ clic en un botón.
 La lógica del proyecto debe estar implementada completamente en JavaScript. En
 este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
 puro también conocido como Vanilla JavaScript.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura básica de un proyecto que sirve como un punto de partida con
-archivos y configuración inicial de dependencias y tests.
-
-El boilerplate que les damos contiene esta estructura:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
-```
 
 ### Descripción de scripts / archivos
 
