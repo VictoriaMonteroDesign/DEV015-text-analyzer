@@ -1,9 +1,14 @@
 const analyzer = {
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.   
-    const word = text.split(" "); // convierte el texto en un array, donde el elemento que divide los elementos para el array es un espacio
+    const cleanedText = text.replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' ').trim(); // Eliminar todos los caracteres no alfanuméricos, incluyendo espacios adicionales
+
+    const words = cleanedText.split(' '); // Dividir el texto limpio en palabras  
+
+    const filteredWords = words.filter(word => word.length > 0); // Filtrar las palabras vacías que puedan haber resultado de la división
+    //const word = text.split(" "); // convierte el texto en un array, donde el elemento que divide los elementos para el array es un espacio
     //const word = text.trim();
-    const filteredWords = word.filter(word => word.length > 0); 
+    //const filteredWords = word.filter(word => word.length > 0); 
     return filteredWords.length;
   },
 
@@ -49,7 +54,7 @@ const analyzer = {
       return 0;
     }
     const numberSum = matches.reduce((sum, num) => sum + parseFloat(num), 0); // Reduce toma los valores en la cadena guardados por matches y los reduce a un valor unico acumulado, la formula es ((el valor acumulado hasta el momento, el nuevo valor que se esta procesando) VA + numero con decimal(VP), valor de inicio de la formula) 
-    
+
     return numberSum; //entrega el resultado final total de las sumas que produjo con reduce
   },
 };
